@@ -1,3 +1,4 @@
 env/
 .idea/
 *.png
+.ipynb_checkpoints/

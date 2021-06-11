@@ -1,3 +1,6 @@
+#! /usr/bin/env nix-shell
+#! nix-shell --pure -i python
+
 import matplotlib
 import matplotlib.pyplot as plt
 import yfinance as yf
@@ -16,9 +19,13 @@ spy_df = spy_ticker.history(period="max")
 
 plt.figure(1)
 dji_df.loc["2001-06-15":]["Close"].plot(title="^DJI")
+plt.savefig('DJI.png')
 
 plt.figure(2)
 spy_df.loc["2001-06-15":]["Close"].plot(title="SPY")
+plt.savefig('SPY.png')
+
 
 plt.figure(3)
 vti_df["Close"].plot(title="VTI")
+plt.savefig('VTI.png')

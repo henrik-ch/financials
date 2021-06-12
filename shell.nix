@@ -9,6 +9,7 @@ mkShell {
     python3Packages.matplotlib
     python3Packages.yfinance
     python3Packages.jupyter
+    visidata
     ripgrep
   ];
 }

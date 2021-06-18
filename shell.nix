@@ -11,5 +11,6 @@ mkShell {
     python3Packages.jupyter
     visidata
     ripgrep
+    nix-info
   ];
 }

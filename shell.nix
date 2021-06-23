@@ -9,6 +9,8 @@ mkShell {
     python3Packages.matplotlib
     python3Packages.yfinance
     python3Packages.jupyter
+    sqlite-utils
+    datasette
     visidata
     ripgrep
     nix-info
